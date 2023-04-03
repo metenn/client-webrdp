@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Strona e-commerce</title>
+</head>
+
+<body>
+	<pre>
+		Your text here
+		Your text here
+		Your text here test
+		Your text here
+		Your text here test
+		Your text here
+		Your text here
+	</pre>
+	<video height="720px" wrdp-video></video>
+	<div hx-component="webrdp">
+		<div class="wrdp-container">
+			<div window class="wrdp-window hidden">
+				Kłopot w wyborze? Pomożemy!
+				<h2>
+					+48 123 456 789
+				</h2>
+				Twój <b>kod specjalny</b> to:
+				<h2 js-wrdp-connectcode>
+					<img src="/src/main/spinner.svg" alt="---">
+				</h2>
+			</div>
+			<div badge class="wrdp-badge">
+				<div class="wrdp-badge-pulse"></div>
+				<div color-badge class="wrdp-badge-color">
+					<img src="/src/main/questionmark.svg" class="wrdp-badge-icon" alt="?">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div js-counter>
+		Count: <span counter-value>0</span>
+		<br>
+		<button counter-button>Click me</button>
+	</div>
+	<script>
+		if (global === undefined) {
+			var global = window;
+		}
+	</script>
+	<script src="/node_modules/simple-peer/simplepeer.min.js"></script>
+	<script type="module" src="/src/main/main.ts"></script>
+</body>
+
+</html>

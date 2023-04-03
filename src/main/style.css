@@ -1,0 +1,115 @@
+@keyframes badge-pulse {
+	70% {
+		width: 72px;
+		height: 72px;
+	}
+
+	80% {
+		width: 60px;
+		height: 60px;
+	}
+
+	90% {
+		width: 72px;
+		height: 72px;
+	}
+}
+
+@keyframes badge-ripple {
+	75% {
+		width: 30px;
+		height: 30px;
+		opacity: 1;
+	}
+
+	90% {
+		width: 120px;
+		height: 120px;
+		opacity: 0.6;
+	}
+
+	100% {
+		width: 140px;
+		height: 140px;
+		opacity: 0;
+	}
+}
+
+.hidden {
+	transition: all 200ms;
+	opacity: 0;
+}
+
+.wrdp-container {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	font-family: Verdana, sans-serif;
+	padding: 3px;
+}
+
+.wrdp-window {
+	width: 360px;
+	height: 150px;
+	padding: 20px 20px 20px 20px;
+	margin: 0;
+	position: absolute;
+	color: #303030;
+	background-color: #eee;
+	box-shadow: 3px 3px 6px black;
+	border-radius: 10px;
+	right: 0;
+	bottom: 0;
+}
+
+.wrdp-window h2 {
+	margin-top: 5px;
+	margin-bottom: 25px;
+	color: black;
+}
+
+.wrdp-badge {
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrdp-badge-color {
+	z-index: 5;
+	width: 72px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #27cf51;
+	border-radius: 72px;
+
+	animation: badge-pulse;
+	animation-duration: 4s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+.wrdp-badge-pulse {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(92, 250, 132);
+	opacity: 0;
+
+	animation: badge-ripple 4s linear;
+	animation-iteration-count: infinite;
+}
+
+.wrdp-badge-icon {
+	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.8));
+}
